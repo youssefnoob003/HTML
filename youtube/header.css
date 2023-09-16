@@ -1,0 +1,146 @@
+.header {
+    margin-left: 10px;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 80px;
+    right: 0px;
+    padding-bottom: 10px;
+    padding-top: 22px;
+    padding-left: 17px;
+    padding-right: 17px;
+    z-index: 100;
+    background-color: white;
+    border-bottom-width: 1px;
+}
+
+.right-sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    margin-left: 20px;
+    flex-shrink: 0;
+}
+
+.ytb-icon {
+    width: 120px;
+    cursor: pointer;
+}
+
+.left-sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    margin-right: 20px;
+    
+}
+
+.header-icon {
+    width: 25px;
+}
+
+.middle-sec {
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: fit-content;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.mic-icon {
+    width: 35px;
+    
+}
+
+.mic-button {
+    border: none;
+    width: 45px;
+    height: 45;
+    border-radius: 50px;
+    margin-left: 10px;
+    object-position: center;
+    object-fit: cover;
+    
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+}
+
+.search-button {
+  background-color: #f7f7f7;
+  border-color: #cfcfcf;
+  border-style: solid;
+  border-left: none;
+  height: 100%;
+  width: 60px;
+  border-width: 1px;
+}
+
+.notif-icon {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.notif-num {
+    position: absolute;
+    background-color: #cc0000;
+    border-radius: 100%;
+    top: -2px;
+    right: -4px;
+    color: white;
+    font-size: 10px;
+    padding: 1.5px 4.5px;
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: white;
+    font-family: robotto, arial;
+}
+
+.my-channel {
+    width: 35px;
+    cursor: pointer;
+}
+
+.search-button .tool-tip,
+.mic-button .tool-tip,
+.header-but .tool-tip {
+    background-color: rgba(116, 111, 111, 0.9);
+    color: white;
+    position: absolute;
+    bottom: -50px;
+    padding: 10px 10px;
+    font-family: robotto, arial;
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.search-button:hover .tool-tip,
+.mic-button:hover .tool-tip,
+.header-but:hover .tool-tip {
+    opacity: 1;
+}
+
+.search-button, .mic-button, .header-but {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
