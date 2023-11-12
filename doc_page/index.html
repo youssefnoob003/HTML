@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python docs</title>
+</head>
+<body>
+  <nav id="navbar"> 
+    <header>Python Documentation</header>
+    <ul>
+      <li><a href="#Introduction" class="nav-link">Introduction</li>
+      <li><a href="#Prerequisites" class="nav-link">Prerequisites</li>
+      <li><a href="#Your_first_code" class="nav-link">Your first code</a></li>
+      <li><a href="#Variables" class="nav-link">variables</a></li>
+      <li><a href="#if..else_statements" class="nav-link">if..else statements</a></li>
+      <li><a href="#for_loops" class="nav-link">for loops</a></li>
+      <li><a href="#while_loops" class="nav-link">while loops</a></li>
+      <li><a href="#functions" class="nav-link">functions</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>
+        Introduction
+      </header>
+      <p>
+        Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+      </p>
+      <p>
+        It is used for:
+      </p>
+      <ul>
+        <li>web development (server-side),</li>
+        <li>software development,</li>
+        <li>mathematics,</li>
+        <li>system scripting.</li>
+      </ul>
+      <p>
+        What can Python do?
+      </p>
+      <ul>
+        <li>Python can be used on a server to create web applications.</li>
+        <li>Python can be used alongside software to create workflows.</li>
+        <li>Python can connect to database systems. It can also read and modify files.</li>
+        <li>Python can be used to handle big data and perform complex mathematics.</li>
+        <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+      </ul>
+      <p>
+        Why Python?
+      </p>
+      <ul>
+        <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+        <li>Python has a simple syntax similar to the English language.</li>
+        <li>Python has syntax that allows developers to write programs with fewer lines than some other programming languages.</li>
+        <li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.</li>
+        <li>Python can be treated in a procedural way, an object-oriented way or a functional way.</li>
+      </ul>
+    </section>
+    <section class="main-section" id="Prerequisites">
+      <header>
+        Prerequisites
+      </header>
+      <p>
+        To learn Python, you need to have a basic understanding of the following:
+      </p>
+      <ol>
+        <li>Basic Computer Skills - Anyone starting to learn computer programming needs basic computer skills. Python is a cross-platform language, so it makes no difference whether you use a macOS, Windows, or even Linux.
+        </li>
+        <li>
+          Probability & Statistics - If you're truly a novice in computer science or computer programming, a strong math foundation can help. Many students who learn Python go on to data science or software engineering careers, and probability and statistics play a crucial role in these fields.
+        </li>
+        <li>
+          Front End Vs. Back End - A Python beginner may also want to learn the language to prepare for a role as a Python Developer, Back End Developer, or Full Stack Developer. Front end, or user-side, development often relies on JavaScript, HTML, and CSS, whereas Python often finds a home on the back end or server side.
+        </li>
+        <li>
+          A Good Text Editor - You will need a good text editor to write Python programs. There are many text editors available, such as Sublime Text, Atom, Brackets, or Notepad++. However, you can use any text editor that you are comfortable with.
+        </li>
+      </ol>
+      <p>
+        If you think web development sounds like your ideal career track, consider a course like Noble Desktop's <a href="https://www.nobledesktop.com/certificates/python-developer" target="_blank">Python Developer Certificate.</a> Students who want to learn Python as part of a broader data science curriculum can get their training as part of a Data Science Certificate program.
+      </p>
+    </section>
+    <section class="main-section" id="Your_first_code">
+      <header>
+        Your first code
+      </header>
+      <p>
+        Python is an interpreted programming language, this means that as a developer you write Python (.py) files in a text editor and then put those files into the python interpreter to be executed.
+      </p>
+      <p>
+        The way to run a python file is like this on the command line:
+      </p>
+      <code>
+C:\Users\Your Name>python helloworld.py 
+      </code>
+      <p>
+        Where "helloworld.py" is the name of your python file.
+      </p>
+      <p>
+        Let's write our first Python file, called helloworld.py, which can be done in any text editor.
+      </p>
+      <p>
+        helloworld.py
+      </p>
+      <code>
+print("Hello, World!")
+      </code>
+      <p>
+        Simple as that. Save your file. Open your command line, navigate to the directory where you saved your file, and run:
+      </p>
+      <code>
+C:\Users\Your Name>python helloworld.py
+      </code>
+      <p>
+        The output should read:
+      </p>
+      <code>
+Hello, World!
+      </code>
+      <p>
+        Congratulations, you have written and executed your first Python program.
+      </p>
+    </section>
+    <section class="main-section" id="Variables">
+      <header>
+        Variables
+      </header>
+      <p>
+        Variables are containers for storing data values.
+      </p>
+      <p>
+        Unlike other programming languages, Python has no command for declaring a variable.
+      </p>
+      <p>
+        A variable is created the moment you first assign a value to it.
+      </p>
+      <p>
+        Example
+      </p>
+      <code>
+x = 5
+y = "John"
+print(x)
+print(y)
+      </code>
+      <p>
+        Variables do not need to be declared with any particular type and can even change type after they have been set.
+      </p>
+      <p>
+        Example
+      </p>
+      <code>
+x = 4 # x is of type int
+x = "Sally" # x is now of type str
+print(x)
+      </code>
+      <p>
+        String variables can be declared either by using single or double quotes:
+      </p>
+      <p>
+        Example
+      </p>
+        <code>
+x = "John"
+# is the same as
+x = 'John'
+      </code>
+      <p>
+        Variable names are case-sensitive.
+      </p>
+      <p>
+        Example
+      </p>
+      <code>
+a = 4
+A = "Sally"
+#A will not overwrite a
+      </code>
+    </section>
+    <section class="main-section" id="if..else_statements">
+      <header>
+        if..else statements
+      </header>
+      <p>
+        Python supports the usual logical conditions from mathematics:
+      </p> 
+      <ul>
+        <li>Equals: <code class="code-small">a == b</code></li>
+        <li>Not Equals: <code class="code-small">a != b</code></li>
+        <li>Less than: <code class="code-small">a < b</code></li>
+        <li>Less than or equal to: <code class="code-small">a <= b</code></li>
+        <li>Greater than: <code class="code-small">a > b</code></li>
+        <li>Greater than or equal to: <code class="code-small">a >= b</code></li>
+      </ul>
+      <p>
+        These conditions can be used in several ways, most commonly in "if statements" and loops.
+      </p>
+      <p>
+        An "if statement" is written by using the <code class="code-small">if</code> keyword.
+      </p>
+      <p>
+        Example
+      </p>
+      <code>
+a = 33
+b = 200
+if b > a:
+  print("b is greater than a")
+      </code>
+      <p>
+        In this example we use two variables, <code class="code-small">a</code> and <code class="code-small">b</code>, which are used as part of the <code class="code-small">if</code> statement to test whether <code class="code-small">b</code> is greater than <code class="code-small">a</code>. As <code class="code-small">a</code> is 33, and <code class="code-small">b</code> is 200, we know that 200 is greater than 33, and so we print to screen that "b is greater than a".
+      </p>
+      <p>
+        The elif keyword is pythons way of saying "if the previous conditions were not true, then try this condition".
+      </p>
+      <p>
+        Example
+      </p>
+      <code>
+a = 33
+b = 33
+if b > a:
+  print("b is greater than a")
+elif a == b:
+  print("a and b are equal")
+      </code>
+      <p>
+        In this example <code class="code-small">a</code> is equal to <code class="code-small">b</code>, so the first condition is not true, but the <code class="code-small">elif</code> condition is true, so we print to screen that "a and b are equal".
+      </p>
+      <p>
+        The else keyword catches anything which isn't caught by the preceding conditions.
+      </p>
+      <p>
+        Example
+      </p>
+      <code>
+a = 200
+b = 33
+if b > a:
+  print("b is greater than a")
+elif a == b:
+  print("a and b are equal")
+else:
+  print("a is greater than b")
+      </code>
+      <p>
+        In this example <code class="code-small">a</code> is greater than <code class="code-small">b</code>, so the first condition is not true, also the <code class="code-small">elif</code> condition is not true, so we go to the else condition and print to screen that "a is greater than b".
+      </p>
+      <p>
+        You can also have an <code class="code-small">else</code> without the <code class="code-small">elif</code>:
+      </p>
+      <p>
+        Example
+      </p>
+      <code>
+a = 200
+b = 33
+if b > a:
+  print("b is greater than a")
+else:
+  print("b is not greater than a")
+      </code>
+      <p>
+        In this example <code class="code-small">a</code> is greater than <code class="code-small">b</code>, so the first condition is not true, also the <code class="code-small">elif</code> condition is not true, so we go to the else condition and print to screen that "b is not greater than a".
+      </p>
+    </section>
+    <section class="main-section" id="for_loops">
+      <header>
+        for loops
+      </header>
+      <p>
+        A <code class="code-small">for</code> loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+      </p>
+      <p>
+        This is less like the <code class="code-small">for</code> keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.
+      </p>
+      <p>
+        With the <code class="code-small">for</code> loop we can execute a set of statements, once for each item in a list, tuple, set etc.
+      </p>
+      <p>
+        Example
+      </p>
+      <code>
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+      </code>
+      <p>
+        The <code class="code-small">for</code> loop does not require an indexing variable to set beforehand.
+      </p>
+      <p>
+        The break Statement
+      </p>
+      <p>
+        With the break statement we can stop the loop before it has looped through all the items:
+      </p>
+      <p>
+        Example
+      </p>
+      <code>
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+  if x == "banana":
+    break
+      </code>
+      <p>
+        The continue Statement
+      </p>
+      <p>
+        With the continue statement we can stop the current iteration of the loop, and continue with the next:
+      </p>
+      <p>
+        Example
+      </p>
+      <code>
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    continue
+  print(x)
+      </code>
+    </section>
+    <section class="main-section" id="while_loops">
+      <header>
+        while loops
+      </header>
+      <p>
+        With the <code class="code-small">while</code> loop we can execute a set of statements as long as a condition is true.
+      </p>
+      <p>
+        Example
+      </p>
+      <code>
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+      </code>
+      <p>
+        The <code class="code-small">break</code> Statement
+      </p>
+      <p>
+        With the <code class="code-small">break</code> statement we can stop the loop even if the <code class="code-small">while</code> condition is true:
+      </p>
+      <p>
+        Example
+      </p>
+      <code>
+i = 1
+while i < 6:
+  print(i)
+  if i == 3:
+    break
+  i += 1
+      </code>
+      <p>
+        The <code class="code-small">continue</code> Statement
+      </p>
+      <p>
+        With the <code class="code-small">continue</code> statement we can stop the current iteration, and continue with the next:
+      </p>
+      <p>
+        Example
+      </p>
+      <code>
+i = 0
+while i < 6:
+  i += 1
+  if i == 3:
+    continue
+  print(i)
+      </code>
+
+    </section>
+    <section class="main-section" id="functions">
+      <header>
+        functions
+      </header>
+      <p>
+        A function is a block of code which only runs when it is called.
+      </p>
+      <p>
+        You can pass data, known as parameters, into a function.
+      </p>
+      <p>
+        A function can return data as a result.
+      </p>
+      <p>
+        Creating a Function
+      </p>
+      <p>
+        In Python a function is defined using the <code class="code-small">def</code> keyword:
+      </p>
+      <p>
+        Example
+      </p>
+      <code>
+def my_function():
+  print("Hello from a function")
+      </code>
+      <p>
+        Calling a Function
+      </p>
+      <p>
+        To call a function, use the function name followed by parenthesis:
+      </p>
+      <p>
+        Example
+      </p>
+      <code>
+def my_function():
+  print("Hello from a function")
+
+my_function()
+      </code>
+      <p>
+        Parameters
+      </p>
+      <p>
+        Information can be passed to functions as parameter.
+      </p>
+      <p>
+        Parameters are specified after the function name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma.
+      </p>
+      <p>
+        The following example has a function with one parameter (fname). When the function is called, we pass along a first name, which is used inside the function to print the full name:
+      </p>
+      <p>
+        Example
+      </p>
+      <code>
+def my_function(fname):
+  print(fname + " Refsnes")
+
+my_function("Emil")
+my_function("Tobias")
+my_function("Linus")
+      </code>
+      <p>
+        A parameter is the variable listed inside the parentheses in the function definition.
+      </p>
+      <p>
+        An argument is the value that is sent to the function when it is called.
+      </p>
+
+    </section>
+  </main>
+</body>
+</html>
