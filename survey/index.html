@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="header">
+        <h1 id="title">Health Survey</h1>
+        <p id="description">Welcome to this health survey! Thanks for taking the time to answer this survey and help us improve our research. </p>
+    </div>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label" for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        </fieldset>
+        <fieldset>
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" required /> 
+        </fieldset>
+        <fieldset>
+            <label id="email-label" for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        </fieldset>
+        <fieldset>
+            <label id="number-label" for="age">Age</label>
+            <input type="number" id="number" name="age" min="1" max="120" placeholder="Enter your age" required />
+        </fieldset>
+        <fieldset>
+            <label>Do you want to receive our newsletter?</label>
+            <input type="checkbox" name="newsletter" value="yes" />Yes I would like to receive your newsletter.
+        </fieldset>
+        <fieldset>
+            <p>What is your favorite food?</p>
+            <div class="food-options">
+                <label class="food" for="pizza">
+                    <input type="radio" id="pizza" name="food" value="pizza" /> Pizza
+                </label>
+                <label class="food" for="hamburger">
+                    <input type="radio" id="hamburger" name="food" value="hamburger" /> Hamburger
+                </label>
+                <label class="food" for="pasta">
+                    <input type="radio" id="pasta" name="food" value="pasta" /> Pasta
+                </label>
+                <label class="food" for="salad">
+                    <input type="radio" id="salad" name="food" value="salad" /> Salad
+                </label>
+                <label class="food" for="sushi">
+                    <input type="radio" id="sushi" name="food" value="sushi" /> Sushi
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <label><p>Do you have a history of any of these diseases?</p></label>
+            <div class="disease-options">
+                <label class="disease" for="cancer">
+                    <input type="checkbox" id="cancer" name="disease" value="cancer" /> Cancer
+                </label>
+                <label class="disease" for="diabetes">
+                    <input type="checkbox" id="diabetes" name="disease" value="diabetes" /> Diabetes
+                </label>
+                <label class="disease" for="heart">
+                    <input type="checkbox" id="heart" name="disease" value="heart" /> Heart Disease
+                </label>
+                <label class="disease" for="hypertension">
+                    <input type="checkbox" id="hypertension" name="disease" value="hypertension" /> Hypertension
+                </label>
+                <label class="disease" for="obesity">
+                    <input type="checkbox" id="obesity" name="disease" value="obesity" /> Obesity
+                </label>
+                <label class="disease" for="stroke">
+                    <input type="checkbox" id="stroke" name="disease" value="stroke" /> Stroke
+                </label>
+                <label class="disease" for="other">
+                    <input type="checkbox" id="other" name="disease" value="other" /> Other
+                </label>
+            </div>
+            <label>If yes, could you write us a description?</label>
+            <textarea name="disease-description" placeholder="Describe your medical history here"></textarea>
+        </fieldset>
+        <fieldset>
+            <label for="exercise">How often do you exercise?</label>
+            <select id="dropdown" name="exercise" class="exercise-select">
+                <option value="never">Never</option>
+                <option value="once">Once a week</option>
+                <option value="twice">Twice a week</option>
+                <option value="three">Three times a week</option>
+                <option value="four">Four times a week</option>
+                <option value="five">Five times a week</option>
+                <option value="six">Six times a week</option>
+                <option value="seven">Seven times a week</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label for="exercise-type">What kind of exercise do you do?</label>
+            <select id="exercise-type" name="exercise-type" class="exercise-select">
+                <option value="none">None</option>
+                <option value="cardio">Cardio</option>
+                <option value="weight">Weight Training</option>
+                <option value="yoga">Yoga</option>
+                <option value="pilates">Pilates</option>
+                <option value="other">Other</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label>Do you take part in any sports club or team?</label>
+            <input type="checkbox" name="sports" value="yes" />
+        </fieldset>
+        <fieldset>
+            <label for="sports-description">If yes, could you give us a short description?</label>
+            <textarea id="sports-description" name="sports-description" placeholder="Team name/club name, Your position there, etc."></textarea>
+        </fieldset>
+        <fieldset>
+            <input id="submit" type="submit" value="Submit" />
+        </fieldset>
+    </form>
+</body>
+</html>

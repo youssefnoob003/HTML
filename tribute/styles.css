@@ -1,0 +1,91 @@
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set a background color and text color for the body */
+  body {
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Style the header */
+  #title {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  #title h1 {
+    font-size: 36px;
+    margin: 10px 0;
+  }
+  
+  #title p {
+    font-size: 18px;
+  }
+  
+  /* Style the image and caption */
+  .img-div {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  #img-caption {
+    font-style: italic;
+    font-size: 14px;
+  }
+  
+  /* Style the biography section */
+  #tribute-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #tribute-info h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #tribute-info ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #tribute-info li {
+    margin: 10px 0;
+  }
+  
+  /* Style the footer */
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  /* Style links in the footer */
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    margin: 100px;
+  }
