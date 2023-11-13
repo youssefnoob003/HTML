@@ -3,14 +3,16 @@
 
 <head>
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portefolio</title>
 </head>
 <nav id="navbar" class="navbar">
     <ul>
-        <li><a href="#about" class="nav-element">About</a></li>
-        <li><a href="#work" class="nav-element">Work</a></li>
+        <li><a href="#welcome-section" class="nav-element">About</a></li>
+        <li><a href="#projects" class="nav-element">Work</a></li>
         <li><a href="#contact" class="nav-element">Contact</a></li>
     </ul>
 </nav>
@@ -18,51 +20,105 @@
 <body>
     <section id="welcome-section" class="welcome-section">
         <h1>Welcome, I'm Youssef</h1>
-        <p>Web Developer</p>
+        <h2>Web Developer</h2>
     </section>
     <section id="projects" class="projects">
         <h1>Here are some of my personal projects</h1>
         <div class="project-container">
             <div class="project">
-                <div class="project1-img">
-                    <img src="https://github.com/youssefnoob003/HTML/blob/master/doc_page/sample.png?raw=true" alt="Project 1">
-                </div>
-                <h2>Project 1</h2>
-                <p>Project 1 description</p>
+                <a target="_blank" href="https://youssefnoob003.github.io/HTML/doc_page/index.html">
+                    <div class="project-img">
+                        <img src="https://github.com/youssefnoob003/HTML/blob/master/doc_page/sample.png?raw=true"
+                            alt="Project 1">
+                    </div>
+                    <h2 class="project-tile">Python documentation page</h2>
+                    <p>A simple python documentation web page created using html/css</p>
+                </a>
             </div>
             <div class="project">
-                <div class="project2-img">
-                    <img src="https://github.com/youssefnoob003/HTML/blob/master/product_page/sample.png?raw=true" alt="Project 2">
-                </div>
-                <h2>Project 2</h2>
-                <p>Project 2 description</p>
+                <a href="https://youssefnoob003.github.io/HTML/product_page/index.html" target="_blank">
+                    <div class="project-img">
+                        <img src="https://github.com/youssefnoob003/HTML/blob/master/product_page/sample.png?raw=true"
+                            alt="Project 2">
+                    </div>
+                    <h2 class="project-tile">LEGO</h2>
+                    <p>A LEGO products webpage designed by myself using html/css</p>
+                </a>
             </div>
             <div class="project">
-                <div class="project3-img">
-                    <img src="https://github.com/youssefnoob003/HTML/blob/master/survey/sample.png?raw=true" alt="Project 3">
-                </div>
-                <h2>Project 3</h2>
-                <p>Project 3 description</p>
+                <a href="https://youssefnoob003.github.io/HTML/survey/index.html" target="_blank">
+                    <div class="project-img">
+                        <img src="https://github.com/youssefnoob003/HTML/blob/master/survey/sample.png?raw=true"
+                            alt="Project 3">
+                    </div>
+                    <h2 class="project-tile">Survey</h2>
+                    <p>A health survey using html/css</p>
+                </a>
             </div>
             <div class="project">
-                <div class="project4-img">
-                    <img src="https://via.placeholder.com/150" alt="Project 4">
-                </div>
-                <h2>Project 4</h2>
-                <p>Project 4 description</p>
+                <a href="https://youssefnoob003.github.io/HTML/youtube/web.html" target="_blank">
+                    <div class="project-img">
+                        <img src="https://github.com/youssefnoob003/HTML/blob/master/youtube/Screenshot%20from%202023-11-13%2017-38-20.png?raw=true"
+                            alt="Project 4">
+                    </div>
+                    <h2 class="project-tile">Youtube</h2>
+                    <p>The youtube homepage using html/css</p>
+                </a>
             </div>
-            <div class="project">
-                <div class="project5-img">
-                    <img src="https://via.placeholder.com/150" alt="Project 5">
-                </div>
-                <h2>Project 5</h2>
-                <p>Project 5 description</p>
-            </div>
-        </div>
         </div>
     </section>
     <section id="contact" class="contact">
-
+        <div class="contact-form">
+            <h1>Get in touch</h1>
+            <form action="https://formspree.io/f/xnqoqjzr" method="POST">
+                <input type="text" name="name" placeholder="Name" class="text-input">
+                <input type="email" name="email" placeholder="Email" class="text-input">
+                <textarea name="message" rows="4" placeholder="Message" class="text-input"></textarea>
+                <input type="submit" value="Send Message" class="btn btn-dark">
+            </form>
+        </div>
+        <div class="bottom-contact">
+            <div class="social-icons">
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100006839385542">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a id="profile-link" target="_blank" href="https://github.com/youssefnoob003?tab=repositories">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/y.oussef.charfeddine/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/youssef-charfeddine-02a445279/">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        <a href="https://youssefnoob003.github.io/HTML/penguin/index.html" target="_blank"><div class="penguin-container">
+            <div class="penguin">
+                <div class="penguin-head">
+                    <div class="face left"></div>
+                    <div class="face right"></div>
+                    <div class="chin"></div>
+                    <div class="eye left">
+                        <div class="eye-lid"></div>
+                    </div>
+                    <div class="eye right">
+                        <div class="eye-lid"></div>
+                    </div>
+                    <div class="blush left"></div>
+                    <div class="blush right"></div>
+                    <div class="beak top"></div>
+                    <div class="beak bottom"></div>
+                </div>
+                <div class="penguin-body">
+                    <div class="arm left"></div>
+                    <div class="arm right"></div>
+                    <div class="foot left"></div>
+                    <div class="foot right"></div>
+                </div>
+            </div>
+        </div>
+    </a>
+    </div>
     </section>
 </body>
 
